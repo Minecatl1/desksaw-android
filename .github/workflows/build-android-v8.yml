@@ -64,7 +64,7 @@ jobs:
         run: |
           set -euo pipefail
           git init source
-          git -C source remote add origin https://github.com/dee-dee-catorce/desksaw.git
+          git -C source remote add origin https://github.com/Minecatl1/desksaw.git
           git -C source fetch --depth=1 origin e3acdd3f8f28de02573a3647c7ab82a6ba1cdb0a
           git -C source checkout --detach FETCH_HEAD
           git -C source apply "$RUNNER_TEMP/android-port.patch"
